@@ -11,15 +11,18 @@ namespace ProjetoEvento.ClassePai
         public DateTime Data { get; set; }
         public int Classificacao { get; set; }
 
-        public virtual bool Cadastrar(){
+        public virtual bool Cadastrar()
+        {
             return false;
         }
 
-        public virtual string Pesquisar(DateTime DataEvento){
+        public virtual string Pesquisar(DateTime DataEvento)
+        {
             return null;
         }
 
-        public virtual string Pesquisar(string TituloEvento){
+        public virtual string Pesquisar(string TituloEvento)
+        {
             return null;
         }
 
