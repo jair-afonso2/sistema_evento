@@ -11,13 +11,13 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
 
         public Show()
         {
-
         }
 
-        public Show(string Titulo, string Local, int Lotacao, string Duracao, int Classificacao, DateTime Data, string Artista, string GeneroMusical)
+        public Show(string Titulo, string Local, int Lotacao, string Duracao, 
+                        int Classificacao, DateTime Data, string Artista, string GeneroMusical)
         {
 
-            base.Titulo = base.Titulo;
+            base.Titulo = Titulo;
             base.Local = Local;
             base.Lotacao = Lotacao;
             base.Duracao = Duracao;
@@ -37,12 +37,13 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
             try
             {
                 arquivo = new StreamWriter("show.csv", true);
-                arquivo.WriteLine(Titulo + ";" + Local + ";" + Duracao + ";" + Data + ";" + Artista + ";" + GeneroMusical + ";" + Lotacao + ";" + Classificacao);
+                arquivo.WriteLine(Titulo + ";" + Local + ";" + Duracao + ";" + Data.ToShortDateString() + ";" + Artista + ";" 
+                                    + GeneroMusical + ";" + Lotacao + ";" + Classificacao);
                 efetuado = true;
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao tentar gravar arquivo " + ex.Message);
+                throw new Exception("\nErro ao tentar gravar arquivo " + ex.Message);
             }
             finally
             {
@@ -64,7 +65,7 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
                 {
                     string[] dados = linha.Split(';');
 
-                    if (dados[0] == Titulo)
+                    if (dados[0].ToUpper() == Titulo.ToUpper())
                     {
                         resultado = linha;
                         break;
@@ -73,7 +74,7 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
             }
             catch(Exception ex)
             {
-                resultado = "Erro ao tentar ler o arquivo " + ex.Message; 
+                resultado = "\nErro ao tentar ler o arquivo " + ex.Message; 
             }
             finally
             {
@@ -95,7 +96,7 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
                 {
                     string[] dados = linha.Split(';');
 
-                    if (dados[3] == Data.ToString())
+                    if (dados[3] == Data.ToShortDateString())
                     {
                         resultado = linha;
                         break;

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "ProjetoEventoConsole/1.0.0": {
+        "dependencies": {
+          "ProjetoEvento": "1.0.0"
+        },
+        "runtime": {
+          "ProjetoEventoConsole.dll": {}
+        }
+      },
+      "ProjetoEvento/1.0.0": {
+        "runtime": {
+          "ProjetoEvento.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoEventoConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjetoEvento/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

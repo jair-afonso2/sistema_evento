@@ -1,0 +1,16 @@
+c:\Users\38141419897\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.csproj.CoreCompileInputs.cache
+c:\Users\38141419897\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.AssemblyInfoInputs.cache
+c:\Users\38141419897\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.AssemblyInfo.cs
+c:\Users\38141419897\backend\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.deps.json
+c:\Users\38141419897\backend\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.dll
+c:\Users\38141419897\backend\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.pdb
+c:\Users\38141419897\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.dll
+c:\Users\38141419897\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.pdb
+C:\Users\Note\Desktop\ProjetoEvento\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.deps.json
+C:\Users\Note\Desktop\ProjetoEvento\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.dll
+C:\Users\Note\Desktop\ProjetoEvento\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.pdb
+C:\Users\Note\Desktop\ProjetoEvento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.csproj.CoreCompileInputs.cache
+C:\Users\Note\Desktop\ProjetoEvento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.AssemblyInfoInputs.cache
+C:\Users\Note\Desktop\ProjetoEvento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.AssemblyInfo.cs
+C:\Users\Note\Desktop\ProjetoEvento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.dll
+C:\Users\Note\Desktop\ProjetoEvento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.pdb

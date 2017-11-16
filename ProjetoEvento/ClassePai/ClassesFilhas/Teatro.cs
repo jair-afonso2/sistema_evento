@@ -14,9 +14,10 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
 
         }
 
-        public Teatro(string Titulo, string Local, int Lotacao, string Duracao, int Classificacao, DateTime Data, string Diretor, string[] Elenco)
+        public Teatro(string Titulo, string Local, int Lotacao, string Duracao,
+                     int Classificacao, DateTime Data, string Diretor, string[] Elenco)
         {
-            base.Titulo = base.Titulo;
+            base.Titulo = Titulo;
             base.Local = Local;
             base.Lotacao = Lotacao;
             base.Duracao = Duracao;
@@ -39,8 +40,10 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
                     stringElenco += var + " ";
                 }
 
+                stringElenco = stringElenco.Remove(stringElenco.Length - 1);
+
                 arquivo = new StreamWriter("teatro.csv", true);
-                arquivo.WriteLine(Titulo + ";" + Local + ";" + Duracao + ";" + Data + ";" + Diretor + ";" + stringElenco + ";" + Lotacao + ";" + Classificacao);
+                arquivo.WriteLine(Titulo + ";" + Local + ";" + Duracao + ";" + Data.ToShortDateString() + ";" + Diretor + ";" + stringElenco + ";" + Lotacao + ";" + Classificacao);
                 efetuado = true;
             }
             catch (Exception ex)
@@ -66,7 +69,7 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
                 {
                     string[] dados = linha.Split(';');
 
-                    if (dados[0] == Titulo)
+                    if (dados[0].ToUpper() == Titulo.ToUpper())
                     {
                         resultado = linha;
                         break;
@@ -97,7 +100,7 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
                 {
                     string[] dados = linha.Split(';');
 
-                    if (dados[3] == Data.ToString())
+                    if (dados[3] == Data.ToShortDateString())
                     {
                         resultado = linha;
                         break;
